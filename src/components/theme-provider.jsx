@@ -10,7 +10,7 @@ const ThemeProviderContext = createContext(initialState)
 export function ThemeProvider({
   children,
   defaultTheme = "system",
-  storageKey = "vite-ui-theme",
+  storageKey = "portfolio-ui-theme",
   ...props
 }) {
   const [theme, setTheme] = useState(
@@ -27,7 +27,7 @@ export function ThemeProvider({
         .matches
         ? "dark"
         : "light"
-
+      localStorage.setItem(storageKey, systemTheme);
       root.classList.add(systemTheme)
       return
     }
