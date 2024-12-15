@@ -17,8 +17,8 @@ export function BgAnim() {
 
     let array = [];
     let color = {
-      particle: document.documentElement.style.getPropertyValue('--primary'),
-      line: document.documentElement.style.getPropertyValue('--accent')
+      particle: `hsl(${document.documentElement.style.getPropertyValue('--primary')})`,
+      line: `hsl(${document.documentElement.style.getPropertyValue('--accent')})`
     };
 
     function generateRandom(min, max) {

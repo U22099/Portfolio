@@ -5,7 +5,7 @@ import App from './App.jsx';
 
 createRoot(document.getElementById('root')).render(
   <ThemeProvider 
-  defaultTheme="dark" 
+  defaultTheme="system" 
   storageKey="vite-ui-theme">
     <App />
   </ThemeProvider>,
