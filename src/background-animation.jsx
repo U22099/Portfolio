@@ -17,11 +17,17 @@ export function BgAnim() {
 
     let array = [];
     let theme = localStorage.getItem("portfolio-ui-theme");
+    if (theme === "system") {
+      theme = window.matchMedia("(prefers-color-scheme: dark)")
+        .matches ?
+        "dark" :
+        "light"
+    }
     let color = {
       particle: theme === "dark" ? "hsl(263.4 70% 50.4%)" : "hsl(262.1 83.3% 57.8%)",
       line: theme === "dark" ? "hsl(215 27.9% 16.9%)" : "hsl(220 14.3% 95.9%)"
     };
-    
+
     console.log(color);
 
     function generateRandom(min, max) {
