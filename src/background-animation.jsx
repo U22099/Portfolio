@@ -16,10 +16,13 @@ export function BgAnim() {
     });
 
     let array = [];
+    
     let color = {
-      particle: `hsl(${document.documentElement.style.getPropertyValue('--primary')})`,
-      line: `hsl(${document.documentElement.style.getPropertyValue('--accent')})`
+      particle: `hsl(263.4 70% 50.4%)`,
+      line: `hsl(215 27.9% 16.9%)`
     };
+    
+    console.log(color);
 
     function generateRandom(min, max) {
       const result = (Math.random() * (max - min) + min);
@@ -104,8 +107,8 @@ export function BgAnim() {
 
   useEffect(() => {
     initAnim();
-  }, []);
+  }, [document]);
   return (
-    <canvas id="canvas" className="bg-background fixed top-0 left-0 w-[95vw] h-[95vh] -z-50"></canvas>
+    <canvas id="canvas" className="bg-background fixed top-0 left-0 w-full h-full -z-50"></canvas>
   )
 }
