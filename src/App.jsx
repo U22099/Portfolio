@@ -3,7 +3,9 @@ import { Button } from "@/components/ui/button";
 
 function App() {
   return (
-    <Button className="font-bold">Portfolio Daniel</Button>
+    <main>
+      <Button className="font-bold">Portfolio Daniel</Button>
+    </main>
   )
 };
 
