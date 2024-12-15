@@ -106,6 +106,6 @@ export function BgAnim() {
     initAnim();
   }, []);
   return (
-    <canvas id="canvas" className="bg-background fixed top-0 left-0 w-[95vw] h-[95vh]"></canvas>
+    <canvas id="canvas" className="bg-background fixed top-0 left-0 w-[95vw] h-[95vh] -z-50"></canvas>
   )
 }
