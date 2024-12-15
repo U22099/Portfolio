@@ -16,10 +16,10 @@ export function BgAnim() {
     });
 
     let array = [];
-    
+    let theme = localStorage.getItem("vite-ui-theme");
     let color = {
-      particle: `hsl(263.4 70% 50.4%)`,
-      line: `hsl(215 27.9% 16.9%)`
+      particle: theme === "dark" ? "hsl(263.4 70% 50.4%)" : "hsl(262.1 83.3% 57.8%)",
+      line: theme === "dark" ? "hsl(215 27.9% 16.9%)" : "hsl(220 14.3% 95.9%)"
     };
     
     console.log(color);
