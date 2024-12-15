@@ -6,7 +6,7 @@ function App() {
   return (
     <main className="flex justify-center items-center w-full h-full">
       <BgAnim />
-      <Button className="font-bold">Portfolio Daniel</Button>
+      <h1 className="font-bold">Portfolio Daniel</h1>
     </main>
   )
 };
