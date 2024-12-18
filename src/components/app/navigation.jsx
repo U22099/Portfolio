@@ -12,21 +12,21 @@ export function Navigation(){
     setNav(page);
   }
  return(
-   <nav ariaLabel="Navigation Menu" role="navigation" className="bg-primary p-3 rounded-tr-lg rounded-br-lg left-0 bottom-40 gap-2 flex flex-col">
+   <nav ariaLabel="Navigation Menu" role="navigation" className="bg-primary p-3 rounded-tr-xl rounded-br-xl fixed left-0 bottom-40 gap-4 flex flex-col opacity-60">
     <a role="button" onClick={() => navigate("home")}>
-      <GoHomeFill className={ (nav === "home" ? "bg-black dark:bg-white":"bg-accent-foreground") + " text-lg"}/>
+      <GoHomeFill className={ (nav === "home" ? "fill-black dark:fill-white":"fill-muted-foreground") + " w-8 h-8 opacity-100"}/>
     </a>
     <a role="button" onClick={() => navigate("about")}>
-      <FaUser className={ (nav === "about" ? "bg-black dark:bg-white":"bg-accent-foreground") + " text-lg"}/>
+      <FaUser className={ (nav === "about" ? "fill-black dark:fill-white":"fill-muted-foreground") + " w-8 h-8"}/>
     </a>
     <a role="button" onClick={() => navigate("skills")}>
-      <VscVscode className={ (nav === "skills" ? "bg-black dark:bg-white":"bg-accent-foreground") + " text-lg"}/>
+      <VscVscode className={ (nav === "skills" ? "fill-black dark:fill-white":"fill-muted-foreground") + " w-8 h-8"}/>
     </a>
     <a role="button" onClick={() => navigate("projects")}>
-      <FaCode className={ (nav === "projects" ? "bg-black dark:bg-white":"bg-accent-foreground") + " text-lg"}/>
+      <FaCode className={ (nav === "projects" ? "fill-black dark:fill-white":"fill-muted-foreground") + " w-8 h-8"}/>
     </a>
     <a role="button" onClick={() => navigate("contact")}>
-      <MdAlternateEmail className={ (nav === "contact" ? "bg-black dark:bg-white":"bg-accent-foreground") + " text-lg"}/>
+      <MdAlternateEmail className={ (nav === "contact" ? "fill-black dark:fill-white":"fill-muted-foreground") + " w-8 h-8"}/>
     </a>
    </nav>
   ) 

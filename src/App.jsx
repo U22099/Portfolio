@@ -5,6 +5,7 @@ import { About } from "@/components/app/about";
 import { Skills } from "@/components/app/skills";
 import { Projects } from "@/components/app/projects";
 import { Contact } from "@/components/app/contact";
+import { Navigation } from "@/components/app/navigation";
 import { useNav } from "@/store";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
        nav === "contact" ?
        <Contact /> : null
       }
+      <Navigation />
     </main>
   )
 };
