@@ -12,7 +12,7 @@ export function Navigation(){
     setNav(page);
   }
  return(
-   <nav ariaLabel="Navigation Menu" role="navigation" className="bg-primary p-3 rounded-tr-xl rounded-br-xl fixed left-0 bottom-40 gap-4 flex flex-col bg-opacity-50">
+   <nav ariaLabel="Navigation Menu" role="navigation" className="bg-primary-transparent p-3 rounded-tr-xl rounded-br-xl fixed left-0 bottom-40 gap-4 flex flex-col">
     <a role="button" onClick={() => navigate("home")}>
       <GoHomeFill className={ (nav === "home" ? "fill-black dark:fill-white":"fill-muted-foreground") + " w-8 h-8"}/>
     </a>
