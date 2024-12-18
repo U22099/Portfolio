@@ -12,9 +12,9 @@ export function Navigation(){
     setNav(page);
   }
  return(
-   <nav ariaLabel="Navigation Menu" role="navigation" className="bg-primary p-3 rounded-tr-xl rounded-br-xl fixed left-0 bottom-40 gap-4 flex flex-col opacity-60">
+   <nav ariaLabel="Navigation Menu" role="navigation" className="bg-primary p-3 rounded-tr-xl rounded-br-xl fixed left-0 bottom-40 gap-4 flex flex-col bg-opacity-50">
     <a role="button" onClick={() => navigate("home")}>
-      <GoHomeFill className={ (nav === "home" ? "fill-black dark:fill-white":"fill-muted-foreground") + " w-8 h-8 opacity-100"}/>
+      <GoHomeFill className={ (nav === "home" ? "fill-black dark:fill-white":"fill-muted-foreground") + " w-8 h-8"}/>
     </a>
     <a role="button" onClick={() => navigate("about")}>
       <FaUser className={ (nav === "about" ? "fill-black dark:fill-white":"fill-muted-foreground") + " w-8 h-8"}/>

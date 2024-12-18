@@ -9,6 +9,7 @@ import { Navigation } from "@/components/app/navigation";
 import { useNav } from "@/store";
 
 function App() {
+  
   const nav = useNav(state => state.nav);
   return (
     <main className="flex justify-center items-center w-full h-full">
