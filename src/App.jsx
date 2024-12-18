@@ -1,12 +1,29 @@
 import { useState } from 'react';
 import { BgAnim } from "./background-animation";
-import { Button } from "@/components/ui/button";
+import { Home } from "@/components/app/home";
+import { About } from "@/components/app/about";
+import { Skills } from "@/components/app/skills";
+import { Projects } from "@/components/app/projects";
+import { Contact } from "@/components/app/contact";
+import { useNav } from "@/store";
 
 function App() {
+  const nav = useNav(state => state.nav);
   return (
     <main className="flex justify-center items-center w-full h-full">
       <BgAnim />
-      <h1 className="font-bold">Portfolio Daniel</h1>
+      {
+       nav === "home" ?
+       <Home /> :
+       nav === "about" ?
+       <About /> :
+       nav === "skills" ?
+       <Skills /> :
+       nav === "projects" ?
+       <Projects /> :
+       nav === "contact" ?
+       <Contact /> : null
+      }
     </main>
   )
 };
