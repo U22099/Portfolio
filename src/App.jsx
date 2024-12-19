@@ -12,21 +12,23 @@ function App() {
   
   const nav = useNav(state => state.nav);
   return (
-    <main className="flex justify-center items-center w-full h-full">
+    <main className="flex gap-6 w-full h-full">
       <BgAnim />
-      {
-       nav === "home" ?
-       <Home /> :
-       nav === "about" ?
-       <About /> :
-       nav === "skills" ?
-       <Skills /> :
-       nav === "projects" ?
-       <Projects /> :
-       nav === "contact" ?
-       <Contact /> : null
-      }
       <Navigation />
+    <section className="w-full h-full justify-center items-center flex">
+        {
+         nav === "home" ?
+         <Home /> :
+         nav === "about" ?
+         <About /> :
+         nav === "skills" ?
+         <Skills /> :
+         nav === "projects" ?
+         <Projects /> :
+         nav === "contact" ?
+         <Contact /> : null
+        }
+      </section>
     </main>
   )
 };

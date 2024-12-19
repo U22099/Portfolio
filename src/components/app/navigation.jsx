@@ -12,7 +12,7 @@ export function Navigation(){
     setNav(page);
   }
  return(
-   <motion.nav initial={{x: -300, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 1}} ariaLabel="Navigation Menu" role="navigation" className="bg-[hsla(262.1,83.3%,57.8%,0.5)] dark:bg-[hsla(263.4,70%,50.4%,0.5)] p-3 rounded-tr-xl rounded-br-xl fixed left-0 bottom-40 gap-5 flex flex-col">
+   <motion.nav initial={{x: -300, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 1}} ariaLabel="Navigation Menu" role="navigation" className="bg-[hsla(262.1,83.3%,57.8%,0.5)] dark:bg-[hsla(263.4,70%,50.4%,0.5)] p-3 rounded-tr-xl rounded-br-xl gap-5 flex flex-col h-fit self-center">
     <motion.a initial={{x: -100, y: 100, opacity: 0.3}} animate={{x: 0, y: 0, opacity: 1}} transition={{ delay: 0.5, tween: 1 }} role="button" onClick={() => navigate("home")}>
       <GoHomeFill className={ (nav === "home" ? "fill-black dark:fill-white":"fill-muted-foreground") + " w-8 h-8"}/>
     </motion.a>
