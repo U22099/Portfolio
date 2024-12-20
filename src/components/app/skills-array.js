@@ -8,19 +8,18 @@ export const frontendSkills = [
   "Responsive Design",
   "Tailwind CSS",
   "Shadcn UI",
-  "Web Accessibility",
+  "Next.js",
   "Progressive Web Apps (PWA)",
-  "Webpack",
   "ES6+",
-  "Cross-Browser Compatibility"
 ];
 
 export const backendSkills = [
   "Node.js",
   "Express.js",
+  "Next.js (Server Actions)",
   "GraphQL",
   "REST APIs",
-  "WebSockets",
+  "WebSockets && Socket IO",
   "Authentication (JWT, OAuth)",
   "Server-Side Rendering (SSR)",
 ];
