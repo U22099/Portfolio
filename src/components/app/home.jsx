@@ -8,9 +8,9 @@ export function Home(){
         <p className="text-muted-foreground text-sm font-bold">What do you think?</p>
         <p className="text-muted-foreground text-sm font-bold">Lame right?</p>
       </motion.div>
-      <motion.h1 initial={{x: -100}} animate={{x: 0}}  className="text-5xl font-bold">D name's <span className="text-primary">Daniel</span></motion.h1>
+      <motion.h1 initial={{x: -100}} animate={{x: 0}}  className="text-4xl font-bold">D name's <span className="text-primary">Daniel</span></motion.h1>
       <motion.h1 initial={{x: 100 }} animate={{x: 0}} className="text-lg text-accent-foreground font-bold">• Fullstack web developer</motion.h1>
-      <motion.h1 initial={{y: 200}} animate={{y: 0}} transition={{ duration: 1.5 }} className="text-md text-muted-foreground font-bold">Welcome to the funniest portfolio you've ever seen</motion.h1>
+      <motion.h1 initial={{y: 150, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{ duration: 1.1 }} className="text-md text-muted-foreground font-bold">Welcome to the funniest portfolio you've ever seen</motion.h1>
     </main> 
   )
 }

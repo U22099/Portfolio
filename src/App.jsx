@@ -15,7 +15,7 @@ function App() {
     <main className="flex gap-6 w-full h-full">
       <BgAnim />
       <Navigation />
-    <section className="w-full h-full justify-center items-center flex">
+      <section className="w-full h-full justify-center items-center flex">
         {
          nav === "home" ?
          <Home /> :
@@ -29,6 +29,7 @@ function App() {
          <Contact /> : null
         }
       </section>
+      <p className="bg-none backdrop-blur-sm opacity-70 fixed p-1 rounded-tl-md rounded-tr-md left-32 bottom-0 text-primary border">{(new Date()).toLocaleDateString('en-UK',{ day: "numeric", year: "numeric", month: "short"})}</p>
     </main>
   )
 };
