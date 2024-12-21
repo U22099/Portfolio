@@ -1,4 +1,5 @@
 import { projects } from "./projects-array";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { FaLink } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
@@ -12,19 +13,19 @@ const openLink = (link) => {
 
 export function Projects() {
   return (
-    <main className="max-h-[80vh] overflow-y-scroll scrollbar flex flex-col gap-2 w-full">
-      <section className="flex flex-col md:flex-row md:flex-wrap gap-2 w-full">
-        {projects.map(project => <ProjectCard data={project} />)}
+    <main className="max-h-[80vh] overflow-y-scroll scrollbar flex flex-col gap-2 mb-20 w-full">
+      <section className="flex flex-col md:flex-row md:flex-wrap gap-3 w-full">
+        {projects.map((project, i) => <ProjectCard key={i} delay={i} data={project} />)}
       </section>
-      <Button onClick={() => openLink("https://github.com/U22099")}>View More Projects</Button>
+      <Button className="w-fit" onClick={() => openLink("https://github.com/U22099")}>View More Projects</Button>
     </main>
   )
 }
 
-function ProjectCard({ data }) {
+function ProjectCard({ data, delay }) {
   return (
-    <main className="flex gap-2 p-2 flex-col rounded-md backdrop-blur-sm w-fit">
-      <img className="rounded w-40 h-40 object-cover" src={data.image} alt={data.name} />
+    <motion.main initial={{opacity: 0, y: 100}} animate={{opacity: 1, y: 0}} transition={{delay: delay*0.5}} className="flex gap-2 p-2 flex-col rounded-md backdrop-blur-sm w-full">
+      <img className="rounded w-full h-60 object-cover" src={data.image+".jpg"} alt={data.name} />
       <h1 className="text-primary text-2xl font-extrabold">{data.name}</h1>
       <p className="text-muted-foreground font-bold font-mono">{data.description}</p>
       <div className="flex justify-between w-full p-2 px-4">
@@ -35,6 +36,6 @@ function ProjectCard({ data }) {
           <FaGithub />
         </Button>
       </div>
-    </main>
+    </motion.main>
   )
 }
