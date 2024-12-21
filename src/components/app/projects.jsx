@@ -19,7 +19,7 @@ export function Projects() {
 function ProjectCard({ data, delay }) {
   return (
     <motion.main initial={{opacity: 0, y: 100}} animate={{opacity: 1, y: 0}} transition={{delay: delay*0.5}} className="flex gap-2 p-2 flex-col rounded-md backdrop-blur-sm w-full">
-      <img className="rounded w-full h-60 object-cover" src={data.image+".jpg"} alt={data.name} />
+      <img className="rounded w-full h-60 object-cover" src={data.image} alt={data.name} />
       <h1 className="text-primary text-2xl font-extrabold">{data.name}</h1>
       <p className="text-muted-foreground font-bold font-mono">{data.description}</p>
       <div className="flex justify-between w-full p-2 px-4">
