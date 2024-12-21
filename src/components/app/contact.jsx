@@ -17,8 +17,9 @@ export function Contact() {
     </main>
   )
 }
+
 function ContactCard({ data }) {
   return (
-    <motion.p onClick={() => openLink(data.link)} initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} className="font-bold text-md p-2 rounded-md border font-mono">{data.name === "Email" ? <MdAttachEmail /> : data.name === "WhatsApp" ? <IoLogoWhatsapp /> : data.name === "GitHub" ? <FaGithub /> : data.name === "LinkedIn" ? <FaLinkedin /> : data.name === "X" ? <FaXTwitter /> : null}{data.name}</motion.p>
+    <motion.p onClick={() => openLink(data.link)} initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} className="font-bold text-lg p-2 rounded-md border font-mono flex gap-2">{data.name === "Email" ? <MdAttachEmail className="w-7 h-7" /> : data.name === "WhatsApp" ? <IoLogoWhatsapp className="w-7 h-7" /> : data.name === "GitHub" ? <FaGithub className="w-7 h-7" /> : data.name === "LinkedIn" ? <FaLinkedin className="w-7 h-7" /> : data.name === "X" ? <FaXTwitter className="w-7 h-7"/> : null}{data.name}</motion.p>
   )
 }
