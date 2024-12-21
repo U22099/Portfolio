@@ -1,15 +1,9 @@
 import { projects } from "./projects-array";
+import { openLink } from "./utils";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { FaLink } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
-
-const openLink = (link) => {
-  const a = document.createElement("a");
-  a.href = link;
-  a.target = "_blank";
-  a.click();
-}
 
 export function Projects() {
   return (
@@ -17,7 +11,7 @@ export function Projects() {
       <section className="flex flex-col md:flex-row md:flex-wrap gap-3 w-full">
         {projects.map((project, i) => <ProjectCard key={i} delay={i} data={project} />)}
       </section>
-      <Button className="w-fit" onClick={() => openLink("https://github.com/U22099")}>View More Projects</Button>
+      <Button className="w-fit mt-2 mb-10 mx-auto" onClick={() => openLink("https://github.com/U22099")}>View More Projects</Button>
     </main>
   )
 }
