@@ -39,6 +39,6 @@ export function Skills(){
 
 function SkillCard({ name }){
   return(
-    <motion.p initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} className="font-bold text-sm p-2 rounded-md border">• {name}</motion.p>
+    <motion.p initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} className="font-bold text-sm p-2 rounded-md border font-mono">• {name}</motion.p>
   )
 }

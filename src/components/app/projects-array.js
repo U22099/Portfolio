@@ -19,5 +19,12 @@ export const projects = [
     description: "Summify is an AI-powered content summarizer that uses the Gemini API to quickly and easily create summaries of text, PDFs, and images. Generate flash cards, chat with the AI about your content, and save your summaries for later",
     github_link: "https://github.com/U22099/Summify",
     live_link: "https://summify-beryl.vercel.app"
+  },
+  {
+    image: "projects/code-editor.jpg",
+    name: "Web Code Editor",
+    description: "A web code editor powered by monaco editor (same editor powering vscode) with code execution feature for languages ranging from javascript, lua, python, typescript and many more",
+    live_link: "https://u22099.github.io/WebCodeEditor",
+    github_link: "https://github.com/U22099/WebCodeEditor"
   }
 ]

@@ -71,4 +71,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  .text-gradient{
+    background: linear-gradient(to right, pink, hsl(var(--primary)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
