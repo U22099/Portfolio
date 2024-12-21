@@ -6,7 +6,7 @@ export function Home(){
   const  setNav = useNav(state => state.setNav);
   return(
     <main className="flex flex-col gap-2">
-      <motion.p initial={{opacity: 0, h: "0%"}} animate={{opacity: 1, h: "100%"}} transition={{ duration: 1.5 }} className="text-gradient font-bold text-3xl">Hey there 😉</motion.p>
+      <motion.p initial={{opacity: 0, h: "0%"}} animate={{opacity: 1, h: "100%"}} transition={{ duration: 1.5 }} className="text-gradient font-bold text-3xl">Hey there <span className="text-primary">😉</span></motion.p>
       <motion.div initial={{x: 700}} animate={{x: 0}}  className="flex flex-col gap-1">
         <p className="text-muted-foreground text-xs font-bold font-mono animate-pulse">(new website()).runPortfolio(&apos;Daniel&apos;</p>
         <p className="text-muted-foreground text-xs font-bold font-mono">{"</>"}</p>

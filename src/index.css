@@ -79,11 +79,13 @@
     -webkit-text-fill-color: transparent;
   }
 
-  .custom-bg-gradient-light {
-    background: linear-gradient(to bottom, hsla(262.1, 83.3%, 57.8%, 0.5), hsla(272.9, 67.2%, 39.4%, 0.5));
+  .custom-bg-gradient{
+    background: linear-gradient(to bottom, hsla(262.1, 83.3%, 57.8%, 0.5), hsla(271.5, 81.3%, 55.9%, 0.5));
   }
 
-  .custom-bg-gradient-dark {
-    background: linear-gradient(to bottom, hsla(263.4, 70%, 50.4%, 0.5), hsla(272.9, 67.2%, 39.4%, 0.5));
+  @media (prefers-color-scheme: dark) {
+    .custom-bg-gradient{
+      background: linear-gradient(to bottom, hsla(263.4, 70%, 50.4%, 0.5), hsla(271.5, 81.3%, 55.9%, 0.5));
+    }
   }
 }
