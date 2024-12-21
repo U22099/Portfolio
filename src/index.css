@@ -68,12 +68,22 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
-  .text-gradient{
-    background: linear-gradient(to right, pink, hsl(var(--primary)));
+
+  .text-gradient {
+    background: linear-gradient(to right, hsl(var(--primary)), hsl(272.9, 67.2%, 39.4%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .custom-bg-gradient-light {
+    background: linear-gradient(to bottom, hsla(262.1, 83.3%, 57.8%, 0.5), hsla(272.9, 67.2%, 39.4%, 0.5));
+  }
+
+  .custom-bg-gradient-dark {
+    background: linear-gradient(to bottom, hsla(263.4, 70%, 50.4%, 0.5), hsla(272.9, 67.2%, 39.4%, 0.5));
   }
 }

@@ -1,5 +1,6 @@
 import { contacts } from "./contacts-array";
 import { openLink } from "./utils";
+import { motion } from "framer-motion";
 import { MdAttachEmail } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
