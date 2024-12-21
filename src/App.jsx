@@ -29,7 +29,7 @@ function App() {
          <Contact /> : null
         }
       </section>
-      <p className="bg-none backdrop-blur-sm opacity-70 fixed p-1 rounded-tl-md rounded-tr-md left-32 bottom-0 text-primary border">{(new Date()).toLocaleDateString('en-UK',{ day: "numeric", year: "numeric", month: "short"})}</p>
+      <p className="bg-none backdrop-blur-sm opacity-70 fixed p-1 rounded-tl-md rounded-tr-md left-32 bottom-0 text-gradient text-sm border">Created on: 21st Dec 2024</p>
     </main>
   )
 };

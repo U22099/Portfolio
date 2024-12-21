@@ -14,7 +14,7 @@ export function Home(){
       <motion.h1 initial={{x: -100}} animate={{x: 0}}  className="text-4xl font-bold font-mono animate-bounce">My name's <span className="text-gradient">Daniel</span></motion.h1>
       <motion.h1 initial={{x: 100 }} animate={{x: 0}} className="text-lg text-accent-foreground font-bold">• Fullstack web developer</motion.h1>
       <motion.h1 initial={{y: 150, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{ duration: 1.1 }} className="text-md text-muted-foreground font-bold">Welcome to the simplest portfolio you've ever seen</motion.h1>
-      <Button variant="outline" onClick={() => setNav("contact")}>Contact</Button>
+      <Button variant="outline" className="backdrop-blur-md w-fit" onClick={() => setNav("contact")}>Contact</Button>
     </main> 
   )
 }
