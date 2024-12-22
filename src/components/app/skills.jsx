@@ -1,8 +1,4 @@
 import { motion } from "framer-motion";
-import {
-  Card,
-  CardContent
-} from "@/components/ui/card";
 import { FaReact } from "react-icons/fa";
 import { frontendSkills, backendSkills, database, cicd, versionControl, softSkills } from "./skills-array";
 

@@ -9,6 +9,7 @@ import { Navigation } from "@/components/app/navigation";
 import { useNav, useAnimation } from "@/store";
 
 function App() {
+  console.log("What are you doing in the console 😏?", "Gerrout 😂");
   const nav = useNav(state => state.nav);
   const animation = useAnimation(state => state.animation);
   return (
