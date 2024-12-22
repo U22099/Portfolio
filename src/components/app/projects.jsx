@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa";
 export function Projects() {
   return (
     <main className="max-h-[80vh] overflow-y-scroll scrollbar flex flex-col gap-2 mb-20 w-full">
-      <section className="flex flex-col md:flex-row md:flex-wrap gap-3 w-full mr-2">
+      <section className="flex flex-col md:flex-row md:flex-wrap gap-3 w-full pr-2">
         {projects.map((project, i) => <ProjectCard key={i} delay={i} data={project} />)}
       </section>
       <Button className="w-fit mt-2 mb-10 mx-auto bg-gradient-to-r from-primary to-fuchsia-500" onClick={() => openLink("https://github.com/U22099?tab=repositories")}>View More Projects</Button>
