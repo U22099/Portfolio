@@ -16,7 +16,7 @@ export function Home(){
       <motion.h1 initial={{x: -100}} animate={{x: 0}}  className="text-4xl font-bold font-mono animate-bounce mt-1">My name's <span className="text-gradient animate-pulse">Daniel</span></motion.h1>
       <motion.h1 initial={{x: 100 }} animate={{x: 0}} className="text-lg text-accent-foreground font-bold">• Fullstack web developer</motion.h1>
       <motion.h1 initial={{y: 150, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{ duration: 1.1 }} className="text-md text-muted-foreground font-bold">Welcome to the simplest portfolio you'd ever see</motion.h1>
-      <motion.div initial={{y: 150, opacity: 0}} animate={{y: 0, opacity: 1}} className="flex gap-2">
+      <motion.div initial={{y: 150, opacity: 0}} animate={{y: 0, opacity: 1}} className="flex gap-2 justify-center items-center">
         <Switch defaultChecked={false} onCheckedChange={(value) => setAnimation(value)}/>
         <h1 className="text-md text-muted-foreground font-bold">Animation</h1>
       </motion.div>
