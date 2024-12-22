@@ -14,6 +14,20 @@ export const projects = [
     live_link: "https://u22099.github.io/Lumina"
   },
   {
+    image: "projects/melodia-api.jpg",
+    name: "Melodia API",
+    description: "Melodia API is a developer-friendly music streaming API that simplifies the integration of music into applications. Built using Node.js, Express.js, MongoDB, Melodia provides a scalable and reliable solution for accessing a wide range of songs and creating personalized playlists.",
+    live_link: "https://melodia-server.onrender.com",
+    github_link: "https://github.com/U22099/Melodia-Server"
+  },
+  {
+    image: "projects/melodia.jpg",
+    name: "Melodia",
+    description: "Melodia is a music streaming application that enables access to musics of different kinds. Built using React.js, JsMediaTags.js, Melodia API, Melodia provides a scalable and reliable solution for accessing a wide range of songs and creating personalized playlists.",
+    live_link: "https://u22099.github.io/Melodia",
+    github_link: "https://github.com/U22099/Melodia"
+  },
+  {
     image: "projects/summify.jpg",
     name: "Summify",
     description: "Summify is an AI-powered content summarizer that uses the Gemini API to quickly and easily create summaries of text, PDFs, and images. Generate flash cards, chat with the AI about your content, and save your summaries for later",
