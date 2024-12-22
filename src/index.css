@@ -74,7 +74,7 @@
   }
 
   .text-gradient {
-    background: linear-gradient(to right, hsl(var(--primary)), hsl(272.9, 67.2%, 39.4%));
+    background: linear-gradient(to right, hsl(var(--primary)), hsl(293.4, 69.5%, 48.8%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
