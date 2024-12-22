@@ -6,3 +6,10 @@ export const useNav = create(set => ({
     set({ nav });
   }
 }));
+
+export const useAnimation = create(set => ({
+  animation: false,
+  setAnimation: (animation) => {
+    set({ animation });
+  }
+}));

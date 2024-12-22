@@ -6,14 +6,14 @@ import { Skills } from "@/components/app/skills";
 import { Projects } from "@/components/app/projects";
 import { Contact } from "@/components/app/contact";
 import { Navigation } from "@/components/app/navigation";
-import { useNav } from "@/store";
+import { useNav, useAnimation } from "@/store";
 
 function App() {
-  
   const nav = useNav(state => state.nav);
+  const animation = useAnimation(state => state.animation);
   return (
     <main className="flex gap-6 w-full h-full">
-      <BgAnim />
+      {animation&&<BgAnim />}
       <Navigation />
       <section className="w-full h-full justify-center items-center flex">
         {
