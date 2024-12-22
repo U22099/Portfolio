@@ -28,8 +28,10 @@ export function BgAnim() {
       line: theme === "dark" ? "hsl(215 27.9% 16.9%)" : "hsl(220 14.3% 95.9%)"
     };
 
-    console.log(color);
-
+    const numCores = navigator.hardwareConcurrency;
+    const maxParticles = numCores * 100;
+    const maxDistance = numCores * 7;
+    
     function generateRandom(min, max) {
       const result = (Math.random() * (max - min) + min);
 
@@ -67,7 +69,7 @@ export function BgAnim() {
 
     function init() {
       array = [];
-      for (let k = 0; k < (innerWidth * innerHeight) / 1500; k++) {
+      for (let k = 0; k < maxParticles; k++) {
         let size = generateRandom(1, 3);
         let x = generateRandom(size, innerWidth - size);
         let y = generateRandom(size, innerHeight - size);
@@ -97,7 +99,7 @@ export function BgAnim() {
           let dx = array[i].x - array[k].x;
           let dy = array[i].y - array[k].y;
           let distance = Math.sqrt(dx * dx + dy * dy);
-          if (distance > 0 && distance < (innerWidth * innerHeight) / 8000) {
+          if (distance > 0 && distance < maxDistance) {
             canvas.strokeStyle = color.line;
             canvas.lineWidth = 1;
             canvas.moveTo(array[i].x, array[i].y);
