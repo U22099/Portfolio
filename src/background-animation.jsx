@@ -29,9 +29,10 @@ export function BgAnim() {
     };
 
     const numCores = navigator.hardwareConcurrency;
-    const maxParticles = numCores * 100;
-    const maxDistance = numCores * 7;
-    
+    const i = innerWidth / innerHeight;
+    const maxParticles = numCores < 2 ? i * 60 : numCores < 4 ? i * 120 : numCores < 8 ? i * 180 : i * 240;
+    const maxDistance = numCores < 2 ? i * 20 : numCores < 4 ? i * 30 : numCores < 8 ? i * 40 : i * 50;
+
     function generateRandom(min, max) {
       const result = (Math.random() * (max - min) + min);
 
