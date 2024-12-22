@@ -9,7 +9,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export function Contact() {
   return (
-    <main className="flex flex-col gap-2">
+    <main className="flex flex-col gap-2" aria-label="Contact">
       <h1 className="text-gradient text-md font-bold font-mono">Contact me on...</h1>
       <section className="flex flex-wrap p-2 gap-2">
         {contacts.map((contact, i) => <ContactCard data={contact} key={i} />)}

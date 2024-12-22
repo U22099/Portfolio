@@ -8,7 +8,7 @@ import { frontendSkills, backendSkills, database, cicd, versionControl, softSkil
 
 export function Skills(){
   return(
-    <main className="max-h-[80vh] overflow-y-scroll scrollbar flex flex-col gap-2">
+    <main aria-label="Skills" className="max-h-[80vh] overflow-y-scroll scrollbar flex flex-col gap-2">
       <motion.h1 initial={{opacity: 0}} animate={{opacity: 1}} transition={{ duration: 0.5, delay:0 }} className="text-gradient font-bold text-md underline">Frontend</motion.h1>
       <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, staggerChildren: 0.5, delayChildren: 0.5, delay: 0.1 }} className="flex gap-2 flex-wrap p-2">
         {frontendSkills.map((name, i) => <SkillCard name={name} key={i} />)}
