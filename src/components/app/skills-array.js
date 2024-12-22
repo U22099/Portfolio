@@ -17,7 +17,6 @@ export const backendSkills = [
   "Node.js",
   "Express.js",
   "Next.js (Server Actions)",
-  "GraphQL",
   "REST APIs",
   "WebSockets && Socket IO",
   "Authentication (JWT, OAuth)",
@@ -25,12 +24,11 @@ export const backendSkills = [
 ];
 
 export const database = [
-  "PostgreSQL",
   "MongoDB",
   "Firebase",
   "NoSQL",
   "Database Design",
-  "ORM (Sequelize, Mongoose, TypeORM)",
+  "Mongoose",
   "Database Optimization",
 ];
 
