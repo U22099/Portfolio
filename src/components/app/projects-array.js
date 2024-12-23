@@ -27,14 +27,14 @@ export const projects = [
   {
     image: "projects/melodia.jpg",
     name: "Melodia",
-    description: "Melodia is a music streaming application that enables access to musics of different kinds. Built using React.js, JsMediaTags.js, Melodia API, Melodia provides a scalable and reliable solution for accessing a wide range of songs and creating personalized playlists.",
+    description: "Melodia is a music streaming application that enables access to musics of different kinds. Built using React.js and Melodia API, Melodia provides a scalable and reliable solution for accessing a wide range of songs and creating personalized playlists.",
     live_link: "https://u22099.github.io/Melodia",
     github_link: "https://github.com/U22099/Melodia"
   },
   {
     image: "projects/summify.jpg",
     name: "Summify",
-    description: "Summify is an AI-powered content summarizer that uses the Gemini API to quickly and easily create summaries of text, PDFs, and images. Generate flash cards, chat with the AI about your content, and save your summaries for later",
+    description: "Summify is an AI-powered content summarizer that uses the Gemini API to quickly and easily create summaries/explanation of text, PDFs, and images. Generate flash cards, chat with the AI about your content, and save your summaries for later",
     github_link: "https://github.com/U22099/Summify",
     live_link: "https://summify-beryl.vercel.app"
   },
