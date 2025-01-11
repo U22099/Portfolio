@@ -69,6 +69,10 @@
     @apply border-border;
   }
 
+  *::selection {
+    @apply bg-primary text-white fill-white
+  }
+
   .scrollbar::-webkit-scrollbar {
     width: 4px;
     border-radius: 20px;
