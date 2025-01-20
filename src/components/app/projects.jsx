@@ -18,7 +18,7 @@ export function Projects() {
 
 function ProjectCard({ data, delay }) {
   return (
-    <motion.main initial={{opacity: 0, y: 100}} animate={{opacity: 1, y: 0}} transition={{delay: delay*0.5}} className="flex gap-2 p-2 flex-col rounded-md backdrop-blur-sm w-full border">
+    <motion.main initial={{opacity: 0, y: 100}} animate={{opacity: 1, y: 0}} transition={{delay: delay*0.5}} className="flex gap-2 p-2 flex-col rounded-md backdrop-blur-sm w-full md:w-[calc(calc(100vw/3)-64px] border">
       <img className="rounded w-full h-60 object-cover" src={data.image} alt={data.name} />
       <h1 className="text-gradient text-2xl font-extrabold">{data.name}</h1>
       <p className="text-muted-foreground font-bold font-mono">{data.description}</p>
