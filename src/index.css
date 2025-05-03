@@ -75,12 +75,12 @@
 
   .scrollbar::-webkit-scrollbar {
     width: 4px;
-    border-radius: 20px;
     transition: all 1s linear;
   }
 
   .scrollbar::-webkit-scrollbar-thumb {
     cursor: pointer;
+    border-radius: 40px;
     background: linear-gradient(to bottom, hsla(262.1, 83.3%, 57.8%, 0.5), hsla(293.4, 69.5%, 48.8%, 0.5));
   }
 
