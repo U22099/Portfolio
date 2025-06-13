@@ -17,6 +17,6 @@ export const contacts = [
   },
   {
     name: "X",
-    link: "https://x.com/dan_22099?s=21"
+    link: "https://x.com/dan_22099"
   }
 ]
