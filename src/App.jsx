@@ -13,10 +13,10 @@ function App() {
   const nav = useNav(state => state.nav);
   const animation = useAnimation(state => state.animation);
   return (
-    <main className="flex gap-6 w-full h-full">
-      {animation&&<BgAnim />}
+    <main className="flex gap-6 w-full h-full overflow-hidden">
+      {animation && <BgAnim />}
       <Navigation />
-      <section className="w-full h-full justify-center items-center flex">
+      <section className="w-full md:w-[50%] lg:w-[30%] md:mx-auto h-full justify-center items-center flex">
         {
          nav === "home" ?
          <Home /> :
